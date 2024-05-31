@@ -2,9 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='w-full h-fit py-14'>
-        <div className='flex justify-evenly'>
-            <div>
+    <footer className='w-full h-fit py-3 md:py-10 px-4 md:px-10 '>
+        <div className='flex justify-evenly text-[1.4vw] flex-col gap-3  md:gap-12 lg:flex-row hover:text-red-500'>
+            <div >
                 <h4>+1.902.315.1279</h4>
                 <h4>info@furrow.studio</h4>
             </div>

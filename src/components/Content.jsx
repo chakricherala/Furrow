@@ -2,15 +2,16 @@
 import React from 'react';
 
 const Content = () => {
+   
     return (
-        <section className='bg-black w-full h-[60vh]'>
-            <div className='w-1/2 translate-x-1/3 text-white translate-y-2/3 text-3xl'>
-                <h2>Great stories don’t just happen— <br /> they need to be uncovered. And
+        <section className=' w-full h-fit '>
+            <div className='w-2/3 md:px-20 p-[6vw] md:p-[12vw] text-white  text-[2vw]'>
+                <h2>Great stories don’t just happen— <br className='md:flex hidden' /> they need to be uncovered. And
                     we dig deep to discover the great stories that lie just below the
                     surface. Dirt under our fingernails and all.</h2>
             </div>
             
-        </section>
+        </section> 
     )
 }
 
