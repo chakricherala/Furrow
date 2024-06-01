@@ -45,7 +45,7 @@ const Navbar = () => {
   return (
     <>
       <motion.div
-        className='w-full h-screen bg-red-700 text-black px-20 py-10 absolute'
+        className='w-full h-[100vh] bg-red-700 text-black px-20 py-10 absolute z-50'
 
         initial={{ x: "-100%" }}
         exit={{ x: "-100%" }}
@@ -69,15 +69,15 @@ const Navbar = () => {
       
         </div>
       </motion.div>
-      <header className='px-10 md:px-20 py-4 md:py-10'>
-        <nav className='flex justify-between items-center'>
+      <header className='px-6 md:px-10 py-4 md:py-10'>
+        <motion.nav initial={{opacity: '0', scale: '0', y: '-10%'}} animate={{opacity: '1', scale: '1', y: '10%', duration: '1.5', delay: '0.6'}} className='flex justify-between items-center'>
           <a href="/" className='text-[3vw] font-semibold flex items-center justify-center'>
             FURR<span className='text-red-500 text-[3vw] '>●</span>W
           </a>
           <button onClick={() => setIsActive(!isActive)}>
             <span className='text-[4vw]'>=</span>
           </button>
-        </nav>
+        </motion.nav>
       </header>
     </>
   );
